@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tiny5&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7e4f25;
+    font-family: 'Noto Sans', sans-serif;
+    height: 2000px;
+}
+
+header {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #F6F7F8;
+    width: 100%;
+    color: white;
+    padding: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Dispersa os elementos do nav nas extremidades */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+nav img {
+    width: 100px; /* Defina o tamanho do logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none; /* Remove o marcador da lista */
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; /* Espaçamento entre os links */
+}
+
+nav a {
+    color: #7e4f25;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #7e4f25;
+    color: snow;
+    padding: 5px 10px;
+}
+
+.fonte-dos-titulos {
+    color: #F6F7F8;
+    padding-top: 60px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.fonte-dos-tituloss {
+    color: black;
+    font-family: "Playwrite GB S", cursive;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Ubunto', 'sans-serif';
+    margin: 15px 0;
+}
+
+p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    padding: 0 20px;
+    background-image: url('img/foto-avilla.jpg');
+    background-position: top;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-titulo-site {
+    color: #7e4f25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    font-size: 28px;
+    font-family: "Bona Nova SC", serif;
+    background-color: #f6f7f862;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#sobre {
+    background-color: white;
+    padding: 10px;
+}
+
+.container-fotos {
+    text-align: center;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 70px;
+}
+
+.foto {
+    text-decoration: none;
+    color: #F6F7F8;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F6F7F8;
+}
+
+.foto img {
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 2px 1px 10px black;
+    border-radius: 5px;
+}
+
+.foto img:hover {
+    filter: brightness(50%);
+    transform: scale(1.0);
+}
+
+.foto a {
+    text-decoration: none;
+    color: #F6F7F8;
+}
+
+.secao-container h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#servicos {
+    background-color: white;
+    padding: 0 10px;
+}
+
+.rodape {
+    padding-top: 200px;
+    background-color: #7e4f25;
+    color: #fff;
+}
+
+.container-info {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card-info-rodape {
+    flex: 1 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-info-rodape a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-info-rodape p {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card-info-rodape img {
+    width: 40px;
+    height: 40px;
+}
+
+.container-copyright {
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #F6F7F8;
+}
+
+.card-info-rodape h4 {
+    font-size: 22px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container-fotos {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+}
