@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tiny5&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
@@ -5,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 *::before,
@@ -15,11 +19,9 @@
 }
 
 body {
-    background-color: #7e4f25;
     font-family: 'Noto Sans', sans-serif;
-    height: 2000px;
 }
-
+/*                                              Navegação                           */
 header {
     font-family: 'Ubuntu', sans-serif;
     background-color: #F6F7F8;
@@ -65,20 +67,9 @@ nav a:hover {
     padding: 5px 10px;
 }
 
-.fonte-dos-titulos {
-    color: #F6F7F8;
-    padding-top: 60px;
-    font-family: "Playwrite GB S", cursive;
-}
-
-.fonte-dos-tituloss {
-    color: black;
-    font-family: "Playwrite GB S", cursive;
-}
-
 h1 {
     text-align: center;
-    font-family: 'Ubunto', 'sans-serif';
+    font-family: "Cinzel", serif;
     margin: 15px 0;
 }
 
@@ -114,18 +105,37 @@ img {
     gap: 40px;
     padding: 40px 20px;
     font-size: 28px;
-    font-family: "Bona Nova SC", serif;
     background-color: #f6f7f862;
     border: 1px solid #fff;
     border-radius: 4px;
     text-align: center;
 }
-
+/*                  SEÇÃO SOBRE             */
 #sobre {
     background-color: white;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
+/*                      SEÇÃO DOS CONTAINERS            */
+.secao-local, .secao-nacional {
+    background-color: #7e4f25;
+    text-decoration: none;
+    color: #F6F7F8;
+    padding-bottom: 50px;
+}
+
+.secao-regional, .secao-internacional {
+    background-color: #F6F7F8;
+    text-decoration: none;
+    color: #7e4f25;
+}
+
+.fonte-dos-titulos {
+    padding-top: 50px;
+}
+
+/*              SEÇÃO DAS FOTOS             */
 .container-fotos {
     text-align: center;
     display: flex;
@@ -134,13 +144,6 @@ img {
     justify-content: space-between;
     gap: 30px;
     padding-top: 70px;
-}
-
-.foto {
-    text-decoration: none;
-    color: #F6F7F8;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #F6F7F8;
 }
 
 .foto img {
@@ -160,18 +163,19 @@ img {
     color: #F6F7F8;
 }
 
-.secao-container h2 {
-    font-size: 32px;
-    font-weight: 500;
+/*          FONTES              */
+h2 {
+    text-align: center;
+    font-family: "Playwrite GB S", cursive;
 }
 
-#servicos {
-    background-color: white;
-    padding: 0 10px;
+.espaco {
+    height: 100px;
 }
 
+/*      RODAPÉ              */
 .rodape {
-    padding-top: 200px;
+    padding: 1px;
     background-color: #7e4f25;
     color: #fff;
 }
@@ -221,6 +225,7 @@ img {
 
 
 
+
 @media screen and (max-width: 1024px) {
     .container-fotos {
         width: 400px;
@@ -228,3 +233,4 @@ img {
         flex-direction: column;
     }
 }
+
