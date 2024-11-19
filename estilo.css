@@ -20,6 +20,7 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
 }
 /*                                              Navegação                           */
 header {
@@ -65,6 +66,7 @@ nav a:hover {
     background-color: #7e4f25;
     color: snow;
     padding: 5px 10px;
+    transition-duration: 0.5s;
 }
 
 h1 {
